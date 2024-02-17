@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+      button {
+        padding: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+      ">
+      Show Quantity
+    </button>
+
+    <button onclick="
+    cartQuantity += 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+      Add to cart
+    </button>
+
+    <button onclick="
+    cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+      +2
+    </button>
+
+    <!-- This is normal type to add "Just - for Subtraction"  -->
+
+    <!-- <button onclick="
+    cartQuantity = cartQuantity + 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">+3</button> -->
+
+    <!-- This is Shortcut -->
+
+    <button onclick="
+    cartQuantity += 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+      +3
+    </button>
+
+    <!-- adding this two (4&5) -->
+
+    <button onclick="
+    cartQuantity += 4;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+      +4
+    </button>
+
+    <button onclick="
+    cartQuantity += 5;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+      +5
+    </button>
+
+    <!-- Exercise 5i (Adding remove from cart button to decrease quantity by 1)-->
+
+    <button onclick="
+   cartQuantity -= 1;
+   console.log(`Cart quantity: ${cartQuantity}`);
+">
+      Remove from cart
+    </button>
+
+    <!-- Excercise 5i finished -->
+
+    <!-- Exercise 5j (Adding 2 buttons i.e. '-2' & '-3') -->
+
+    <button onclick="
+cartQuantity -= 2;
+console.log(`Cart quantity: ${cartQuantity}`);
+">
+      -2
+    </button>
+
+    <button onclick="
+cartQuantity -= 3;
+console.log(`Cart quantity: ${cartQuantity}`);
+">
+      -3
+    </button>
+
+    <!-- Exercise 5j ends -->
+
+
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log(`Cart was reset.`);
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+      Reset Cart
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+
+  </body>
+
+</html>
