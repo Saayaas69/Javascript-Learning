@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans and If-statements</title>
+  </head>
+
+  <body>
+
+    <script>
+      // letting current hour of the day i.e. 17(5)pm
+
+      const hour = 17;
+
+      // If hour(i.e current time) is greater or euqal to 6am && hour is less or equal to 12noon then it will display 'Good morning!'.
+      // that means 6am-12noon time are under Good morning!
+      // similarly 13pm-17pm are between 'Good afternoon' & every other time is 'Good Night'  
+
+
+      if (hour >= 6 && hour <= 12) {
+        console.log('Good morning!');
+      } else if (hour >= 13 && hour <= 17) {
+        console.log('Good afternoon');
+      } else {
+        console.log('Good Night');
+      }
+
+    </script>
+
+  </body>
+
+</html>
